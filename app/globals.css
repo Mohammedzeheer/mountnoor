@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,700;1,300&display=swap');
+html {
+  font-family: "Rubik", sans-serif;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+}
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+
+.blur{
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+  height: 3px;
+}
+
+/* .brightness{
+  filter: brightness(9.5);
+} */
+
+input[type="number"]::-webkit-inner-spin-button{
+  display: none;
+}
+
+input[type="number"]{
+  -moz-appearance: textfield;
+}
+
+/* .scrollHide::-webkit-scrollbar{
+  display: none;
+} */
+body::-webkit-scrollbar{
+  display: none;
+}
+input{
+  outline: none;
+}
+
+.container{
+  width: 100%;
+  background: linear-gradient(45deg, #d2001a,#7462ff,#f48e21,#23d5ab);
+  background-size: 300% 300%;
+  animation: color 12s ease-in-out infinite;
+}
+/* 
+@font-face {
+  font-family: 'Cooper Black';
+  src: url('/public/fonts/cooper-black-webfont.woff') format('woff2'),
+       url('/public/fonts/cooper-black-webfont.woff') format('woff');
+  font-weight: medium;
+  font-style: medium;
+} */
+
+.font-cooper-black {
+  font-family: 'Cooper Black', serif;
+}
+
+/* @font-face {
+  font-family: 'BAUHS93';
+  src: url('/public/fonts/BAUHS93.woff') format('woff2'),
+       url('/public/fonts/BAUHS93.woff') format('woff');
+  font-weight: medium;
+  font-style: medium;
+} */
+
+.font-BAUHS93 {
+  font-family: 'BAUHS93', serif;
+}
+
+@keyframes color{
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0 50%;
+  }
+
+}
