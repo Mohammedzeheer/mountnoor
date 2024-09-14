@@ -4,8 +4,7 @@ import { downloadCanvas } from '@/functions/utils/image';
 import { classNames } from 'primereact/utils';
 import { useRef } from 'react';
 
-const SinglePoster = ({ id, theme, result, imageUrl, x, y, setDownloading }:
-  { id: any, theme: string; result: any, imageUrl: string, x: number, y: number, setDownloading: any }) => {
+const SinglePoster = ({ id, theme, result, imageUrl, x, y, setDownloading }) => {
   const scale = 0.35;
   const program = result[0]?.program;
   const programName = program?.name;
@@ -72,7 +71,7 @@ const SinglePoster = ({ id, theme, result, imageUrl, x, y, setDownloading }:
               >{cat}</h6>
               <section className='mt-10'>
                 {
-                  result && result.map((rs: any) => {
+                  result && result.map((rs) => {
                     const partic = rs.participant;
                     return <div key={rs.id} className='flex items-center mb-2'>
                       <div className={classNames({

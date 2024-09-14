@@ -18,7 +18,7 @@ const About1 = () => {
         <div className="md:w-3/5 mt-6 md:mt-0 md:ml-16" data-aos="fade-left" data-aos-duration="2000">
           <h2 className="text-2xl font-bold text-primary">ABOUT US</h2>
           <p className="mt-4 text-gray-700 text-justify">
-            Mountnoor, often referred to as the "Village of Knowledge," is a distinguished educational and spiritual hub located in Posoat, Manjeshwar, Kasaragod, Kerala. This serene village is home to a range of institutions dedicated to learning, spiritual growth, and community service, all operating under the auspices of the Kerala Muslim Jamaath
+            Mountnoor, often referred to as the Village of Knowledge is a distinguished educational and spiritual hub located in Posoat, Manjeshwar, Kasaragod, Kerala. This serene village is home to a range of institutions dedicated to learning, spiritual growth, and community service, all operating under the auspices of the Kerala Muslim Jamaath
           </p>
           <p className="mt-4 text-gray-700 text-justify">
             Mountnoor houses the Nooraniya Madrasa, where traditional Islamic education is imparted alongside moral and ethical teachings. Our coaching classes provide academic support, ensuring that students excel in both religious and secular studies, fostering a well-rounded education.
