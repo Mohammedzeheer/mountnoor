@@ -33,10 +33,10 @@ const page = () => {
                       <h1 className='font-medium text-sm leading-4'> {image.session} </h1>
                     </div>
                     <div>
-                      <h1 className='text-sm font-semibold leading-4 text-end'> {image.date} </h1>
+                      {/* <h1 className='text-sm font-semibold leading-4 text-end'> {image.date} </h1> */}
                     </div>
                   </div>
-                  <h1 className=' font-semibold text-lg'>{image.role}</h1>
+                  {/* <h1 className=' font-semibold text-lg'>{image.role}</h1> */}
                 </div>
               </div>
             )
@@ -44,13 +44,13 @@ const page = () => {
           )}
         </div>
         {/* btn */}
-        <div className='w-full pt-8'>
+        {/* <div className='w-full pt-8'>
           <a
             href={watsappGroupUrls}
             className='bg-gradient-to-r to-orange-700 from-yellow-500 shadow-xl rounded-xl text-white w-full p-4 px-6 text-lg font-semibold flex items-center justify-center gap-2'>
             <FaWhatsapp size={25} />
             Explore the Event</a>
-        </div>
+        </div> */}
       </div>
     </div>
   )

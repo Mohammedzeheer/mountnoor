@@ -16,10 +16,10 @@ const HeroSection2 = () => {
         </div>
 
         <div className="mx-auto text-center">
-          <div className="grid grid-cols-3 gap-4 mx-auto lg:grid-cols-6">
+          <div className="grid grid-cols sm:grid-cols-2 md:grid-cols-3 gap-8 md:gap-4 mx-auto lg:grid-cols-6">
             <div>
               <img
-                className="h-4 mx-auto lg:h-12 grayscale hover:grayscale-0 transition duration-300"
+                className="h-8 mx-auto lg:h-12 hover:grayscale transition duration-300"
                 src='https://res.cloudinary.com/dah6aafle/image/upload/v1724747969/mountnoor/santhwanam.png'
                 alt="sys"
                 loading='lazy'
@@ -27,7 +27,7 @@ const HeroSection2 = () => {
             </div>
             <div>
               <img
-                className="h-4 mx-auto lg:h-12 grayscale hover:grayscale-0 transition duration-300"
+                className="h-8 mx-auto lg:h-12 hover:grayscale transition duration-300"
                 src='https://res.cloudinary.com/dah6aafle/image/upload/v1724747416/mountnoor/20240827_134841_qkq3vk.png'
                 alt="Framer"
                 loading='lazy'
@@ -35,7 +35,7 @@ const HeroSection2 = () => {
             </div>
             <div>
               <img
-                className="h-4 mx-auto lg:h-12 grayscale hover:grayscale-0 transition duration-300"
+                className="h-8 mx-auto lg:h-12 hover:grayscale transition duration-300"
                 src='https://res.cloudinary.com/dah6aafle/image/upload/v1724747323/mountnoor/20240827_134624_kjmyjz.png'
                 alt="Sketch"
                 loading='lazy'
@@ -43,7 +43,7 @@ const HeroSection2 = () => {
             </div>
             <div>
               <img
-                className="h-4 mx-auto lg:h-12 grayscale hover:grayscale-0 transition duration-300"
+                className="h-8 mx-auto lg:h-12 hover:grayscale transition duration-300"
                 src='https://res.cloudinary.com/dah6aafle/image/upload/v1724747322/mountnoor/20240827_134320_cce6jb.png'
                 alt="Sketch"
                 loading='lazy'
@@ -51,7 +51,7 @@ const HeroSection2 = () => {
             </div>
             <div>
               <img
-                className="h-4 mx-auto lg:h-12 grayscale hover:grayscale-0 transition duration-300"
+                className="h-8 mx-auto lg:h-12 hover:grayscale transition duration-300"
                 src='https://res.cloudinary.com/dah6aafle/image/upload/v1724747353/mountnoor/kalalyam.png'
                 alt="kalalayam"
                 loading='lazy'
@@ -60,7 +60,7 @@ const HeroSection2 = () => {
 
             <div>
               <img
-                className="h-4 mx-auto lg:h-12 grayscale hover:grayscale-0 transition duration-300"
+                className="h-8 mx-auto lg:h-12 hover:grayscale transition duration-300"
                 src='https://res.cloudinary.com/dah6aafle/image/upload/v1724748394/mountnoor/risala_tc5vix.png'
                 alt="risala"
                 loading='lazy'
