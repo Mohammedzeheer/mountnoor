@@ -5,19 +5,25 @@ export const sessionImages =[
         url: 'https://res.cloudinary.com/dah6aafle/image/upload/v1724996168/mountnoor/mountnoor_qazi_AP_Usthad.jpg',
         session: 'Mountnoor Qazi',
         date : 'Aug 03, Sat',
-        role: 'Inauguration',
+        role: 'Qazi',
     },
     {
         url: 'https://res.cloudinary.com/dah6aafle/image/upload/v1726642870/mountnoor/meelad%20rally%202024/mountuneposter.jpg',
         session: 'Mountune 2024',
         date : 'Aug 02, Fri',
-        role: 'Key Note Address',
+        role: 'Fest',
     },
     {
         url: 'https://res.cloudinary.com/dah6aafle/image/upload/v1726642826/mountnoor/meelad%20rally%202024/meelad_rally_rbef2x.jpg',
         session: 'Meelad Rally',
         date : 'Aug 02, Fri',
-        role: 'Inauguration',
+        role: 'Rally',
+    },
+    {
+        url: 'https://res.cloudinary.com/dah6aafle/image/upload/v1727766233/mountnoor/food_fest_ru7hvo.jpg',
+        session: 'Food Fest',
+        date : 'Oct 02, Wed',
+        role: 'Mountune Food Fest',
     },
     {
         url: 'https://res.cloudinary.com/dah6aafle/image/upload/v1726642870/mountnoor/meelad%20rally%202024/mountunedeclaration2024_c1vggl.jpg',
