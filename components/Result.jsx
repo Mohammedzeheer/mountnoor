@@ -1,7 +1,7 @@
 'use client'
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { categories, itemsByCategory } from '../data/data.js'
+import { categories, itemsByCategory } from '../data/moutune.js'
 import { capitalizeFirstLetter } from '../utils/capitalizeFirstLetter';
 
 function Result() {
