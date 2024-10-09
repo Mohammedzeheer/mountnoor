@@ -14,6 +14,12 @@ export const sessionImages =[
         role: 'Fest',
     },
     {
+        url: 'https://res.cloudinary.com/dah6aafle/image/upload/v1728501520/honeyDrops_fvapms.jpg',
+        session: 'Honey Drops',
+        date : '2024 Oct 18',
+        role: 'Mountune Fest',
+    },
+    {
         url: 'https://res.cloudinary.com/dah6aafle/image/upload/v1726642826/mountnoor/meelad%20rally%202024/meelad_rally_rbef2x.jpg',
         session: 'Meelad Rally',
         date : 'Aug 02, Fri',
@@ -31,48 +37,13 @@ export const sessionImages =[
         date : 'Aug 02, Fri',
         role: 'Inauguration',
     },
-    // {
-    //     url: 'https://res.cloudinary.com/dh2iv6yeu/image/upload/v1722618181/WhatsApp_Image_2024-08-02_at_10.21.40_PM_e2dgbl.jpg',
-    //     session: 'Inaugural session',
-    //     date : 'Aug 03, Sat',
-    //     role: 'Literary discourse',
-    // },
-    // {
-    //     url: 'https://res.cloudinary.com/dh2iv6yeu/image/upload/v1722623645/WhatsApp_Image_2024-08-02_at_2.58.57_PM_essj0y.jpg',
-    //     session: 'Career Gala',
-    //     date : 'Aug 02, Fri',
-    //     role: 'Inauguration',
-    // },
-    // {
-    //     url: 'https://res.cloudinary.com/dh2iv6yeu/image/upload/v1722623754/WhatsApp_Image_2024-08-02_at_2.43.27_PM_jkogsm.jpg',
-    //     session: 'Cultural Conference',
-    //     date : 'Aug 02, Fri',
-    //     role: 'Message',
-    // },
-    // {
-    //     url: 'https://res.cloudinary.com/dh2iv6yeu/image/upload/v1722624185/WhatsApp_Image_2024-07-31_at_10.22.13_PM_bl0wit.jpg',
-    //     session: 'Talk 1',
-    //     date : 'Aug 03, Sat',
-    //     role: 'Speakers',
-    // },
-    // {
-    //     url: 'https://res.cloudinary.com/dh2iv6yeu/image/upload/v1722623919/WhatsApp_Image_2024-08-01_at_2.47.19_PM_uz0key.jpg',
-    //     session: 'Talk 2',
-    //     date : 'Aug 03, Sat',
-    //     role: 'Speakers',
-    // },
-    // {
-    //     url: 'https://res.cloudinary.com/dh2iv6yeu/image/upload/v1722624240/WhatsApp_Image_2024-08-01_at_4.56.05_PM_ogmsic.jpg',
-    //     session: 'Talk 3',
-    //     date : 'Aug 03, Sat',
-    //     role: 'Speakers',
-    // },
-    // {
-    //     url: 'https://res.cloudinary.com/dh2iv6yeu/image/upload/v1722624299/WhatsApp_Image_2024-08-01_at_10.40.07_PM_p6zwyx.jpg',
-    //     session: 'Talk 4',
-    //     date : 'Aug 04, Sun',
-    //     role: 'Speakers',
-    // },
+    {
+        url: 'https://res.cloudinary.com/dah6aafle/image/upload/v1728501521/queens_meet_ojrbgk.jpg',
+        session: 'Queens meet',
+        date : '2024 Oct 13',
+        role: 'Mountune Fest',
+    },
+
 ]
 
 export const galleryImages = [
@@ -87,5 +58,22 @@ export const galleryImages = [
     {url: 'https://res.cloudinary.com/dah6aafle/image/upload/v1726642864/mountnoor/meelad%20rally%202024/meeladrally3_qnnotu.jpg'},
     {url: 'https://res.cloudinary.com/dah6aafle/image/upload/v1726642867/mountnoor/meelad%20rally%202024/meeladrally10_vwg8fw.jpg'},  
     {url: 'https://res.cloudinary.com/dah6aafle/image/upload/v1726642878/mountnoor/meelad%20rally%202024/meeladrally6_zerrar.jpg'},
+    {url: 'https://res.cloudinary.com/dah6aafle/image/upload/v1726642870/mountnoor/meelad%20rally%202024/meeladrally9_qmichw.jpg'},
+
+    {url: 'https://res.cloudinary.com/dah6aafle/image/upload/v1728500902/mountnoor/20240921_161720_wj7hhj.jpg'},
+    {url: 'https://res.cloudinary.com/dah6aafle/image/upload/v1728500896/mountnoor/20240921_161826_dkjt90.jpg'},
+    {url: 'https://res.cloudinary.com/dah6aafle/image/upload/v1728502090/mountnoor/20240921_161852_cq9lyz.jpg'},
+
+    {url: 'https://res.cloudinary.com/dah6aafle/image/upload/v1728501269/mountnoor/WhatsApp_Image_2024-10-10_at_12.43.55_AM_jt0jip.jpg'},
+    {url: 'https://res.cloudinary.com/dah6aafle/image/upload/v1728501269/mountnoor/WhatsApp_Image_2024-10-10_at_12.42.55_AM_ro4nac.jpg'},
+    {url: 'https://res.cloudinary.com/dah6aafle/image/upload/v1728502359/mountnoor/photo/20230408_202612_mi54ss.jpg'},
+  
+    {url: 'https://res.cloudinary.com/dah6aafle/image/upload/v1728502355/mountnoor/photo/20240815_081445_a3ax4a.jpg'},
+    {url: 'https://res.cloudinary.com/dah6aafle/image/upload/v1728502360/mountnoor/photo/20240815_084125_fxfntc.jpg'},
+    {url: 'https://res.cloudinary.com/dah6aafle/image/upload/v1728502354/mountnoor/photo/20240815_083924_vr71cu.jpg'},
+
+   
+    {url: 'https://res.cloudinary.com/dah6aafle/image/upload/v1728502357/mountnoor/photo/20230408_202704_ctu2ie.jpg'},
+
 
 ]
