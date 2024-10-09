@@ -1,5 +1,4 @@
 import Image from 'next/image';
-// import sunnicentre from '@/public/assets/sunnicentre.jpg'
 import sunnicentre from '@/public/assets/mountnoorRabeeh.jpg'
 
 const About3 = () => {
