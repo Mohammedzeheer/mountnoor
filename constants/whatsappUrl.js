@@ -20,6 +20,30 @@ export const sessionImages =[
         role: 'Mountune Fest',
     },
     {
+        url: 'https://res.cloudinary.com/dah6aafle/image/upload/v1729192608/mountnoor/Mountune2024/thangal_q4vmw2.jpg',
+        session: 'Thajul Ulama, Noorul Ulama Commemoration',
+        date : '2024 Oct 18',
+        role: 'Dua',
+    },
+    {
+        url: 'https://res.cloudinary.com/dah6aafle/image/upload/v1729192606/mountnoor/Mountune2024/ktmamscha_hqypes.jpg',
+        session: 'Smart Class Inauguration',
+        date : '2024 Oct 18',
+        role: 'Mountune Fest',
+    },
+    {
+        url: 'https://res.cloudinary.com/dah6aafle/image/upload/v1729192606/mountnoor/Mountune2024/hamza_misbaayi_ambdjq.jpg.jpg',
+        session: 'Thajul Ulama, Noorul Ulama Commemoration',
+        date : '2024 Oct 20',
+        role: 'Speech',
+    },
+    {
+        url: 'https://res.cloudinary.com/dah6aafle/image/upload/v1729192605/mountnoor/Mountune2024/namshadmash_us7osa.jpg',
+        session: 'Honey Drops',
+        date : '2024 Oct 18',
+        role: 'Mountune Fest',
+    },
+    {
         url: 'https://res.cloudinary.com/dah6aafle/image/upload/v1726642826/mountnoor/meelad%20rally%202024/meelad_rally_rbef2x.jpg',
         session: 'Meelad Rally',
         date : 'Aug 02, Fri',
