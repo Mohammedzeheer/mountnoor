@@ -1,6 +1,7 @@
 'use client';
 import React from "react";
 import Image from 'next/image';
+import Link from 'next/link';
 import mountnoorLogo from "../public/assets/Icon/mountnoor5.png";
 import { MdOutlineEmail, MdOutlinePhone } from "react-icons/md";
 import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa";
@@ -37,8 +38,13 @@ const Footer = () => {
         <div className="row-span-2 sm:col-span-2 sm:col-start-7 sm:col-end-9 flex flex-col">
           <p className="text-black-600 mb-4 font-medium text-lg">Quick Links</p>
           <ul className="text-black-500">
-            <li className="my-2 hover:text-primary cursor-pointer transition-all">
+            {/* <li className="my-2 hover:text-primary cursor-pointer transition-all">
               About Us{" "}
+            </li> */}
+            <li className="my-2 hover:text-primary cursor-pointer transition-all">
+              <Link href="/about">
+                About Us
+              </Link>
             </li>
             <li className="my-2 hover:text-primary cursor-pointer transition-all">
               Privacy Policy{" "}
