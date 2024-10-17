@@ -1,5 +1,5 @@
 export const Mteams = [
-  'Ecipo Gazza', 'Ecipo fadio',
+  'Ecipo Gazza', 'Ecipo Cordova ',
 ];
 
 export const categories = [
@@ -47,6 +47,6 @@ export const itemsByCategory = {
     'Malappatt', 'Qavvali', 'Burdha', 'Group song catagory A', 'Group song catagory B',
   ],
   'General Girls': [
-    'Malappatt', 'Burdha', 'Group song catagory A', 'Group song catagory B',
+    'Quiz','Craft', 'Burdha', 'Group song catagory A', 'Fiqh seminar','Magazine','Mahlara'
   ],
 };

@@ -66,7 +66,9 @@ export const galleryImages = [
 
     {url: 'https://res.cloudinary.com/dah6aafle/image/upload/v1728501269/mountnoor/WhatsApp_Image_2024-10-10_at_12.43.55_AM_jt0jip.jpg'},
     {url: 'https://res.cloudinary.com/dah6aafle/image/upload/v1728501269/mountnoor/WhatsApp_Image_2024-10-10_at_12.42.55_AM_ro4nac.jpg'},
-    {url: 'https://res.cloudinary.com/dah6aafle/image/upload/v1728502359/mountnoor/photo/20230408_202612_mi54ss.jpg'},
+    {url: 'https://res.cloudinary.com/dah6aafle/image/upload/v1728501269/mountnoor/WhatsApp_Image_2024-10-10_at_12.43.55_AM_jt0jip.jpg'},
+    // {url: 'https://res.cloudinary.com/dah6aafle/image/upload/v1728502359/mountnoor/photo/20230408_202612_mi54ss.jpg'},
+    // {url: 'https://res.cloudinary.com/dah6aafle/image/upload/v1729172012/mountnoor/sp4_hedppw.jpg'},
   
     {url: 'https://res.cloudinary.com/dah6aafle/image/upload/v1728502355/mountnoor/photo/20240815_081445_a3ax4a.jpg'},
     {url: 'https://res.cloudinary.com/dah6aafle/image/upload/v1728502360/mountnoor/photo/20240815_084125_fxfntc.jpg'},
@@ -74,6 +76,18 @@ export const galleryImages = [
 
    
     {url: 'https://res.cloudinary.com/dah6aafle/image/upload/v1728502357/mountnoor/photo/20230408_202704_ctu2ie.jpg'},
+    {url: 'https://res.cloudinary.com/dah6aafle/image/upload/v1729173185/mountnoor/20230408_202447_gi3sr9.jpg'},
+    {url: 'https://res.cloudinary.com/dah6aafle/image/upload/v1728502359/mountnoor/photo/20230408_202612_mi54ss.jpg'},
+
+
+    {url: 'https://res.cloudinary.com/dah6aafle/image/upload/v1729172006/mountnoor/sp6_ifllwo.jpg'},
+    {url: 'https://res.cloudinary.com/dah6aafle/image/upload/v1729172006/mountnoor/sp1_wcyxpg.jpg'},
+    {url: 'https://res.cloudinary.com/dah6aafle/image/upload/v1729172008/mountnoor/sp5_ldptki.jpg'},
+    {url: 'https://res.cloudinary.com/dah6aafle/image/upload/v1729172006/mountnoor/sp2_fefknz.jpg'},
+    {url: 'https://res.cloudinary.com/dah6aafle/image/upload/v1729172008/mountnoor/sp3_z9ea0k.jpg'},
+    {url: 'https://res.cloudinary.com/dah6aafle/image/upload/v1729172012/mountnoor/sp4_hedppw.jpg'},
+
+
 
 
 ]

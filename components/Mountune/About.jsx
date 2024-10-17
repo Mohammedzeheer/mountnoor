@@ -1,5 +1,5 @@
 import Image from "next/image";
-import sunnicentre from "@/public/assets/sunnicentre.jpg";
+import mountune24 from "@/public/assets/rally.jpeg";
 
 const About = () => {
     return (
@@ -16,7 +16,7 @@ const About = () => {
                 </div>
                 <div className="md:w-2/5 md:ml-3 m-3" data-aos="fade-left" data-aos-duration="2000">
                     <Image
-                        src={sunnicentre}
+                        src={mountune24}
                         alt="Institution Building"
                         width={500}
                         height={500}
