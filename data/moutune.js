@@ -34,7 +34,6 @@ export const itemsByCategory = {
   ],
   'Upper Primary Girls': [
     'Water Color', 'Spelling Bee', 'Hand Writing', 'Qiraath', 'Moulid',
-    'Qiraath',
   ],
   'Senior Boys': [
     'Speech Malayalam', 'Speech English', 'Mappilappattu', 'Arabic Song', 'Quiz', 'Madh Song', 'Language Game E',
