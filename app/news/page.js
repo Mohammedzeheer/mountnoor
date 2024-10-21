@@ -21,7 +21,7 @@ const page = () => {
           {images.length > 0 && images.slice(0, 15).map((image, i) => {
             return (
               <div key={i} className='flex flex-col flex-grow bg-yellow-50  rounded-xl shadow hover:shadow-lg hover:scale-105 duration-150 hover:cursor-pointer w-full'>
-                <Image src={image.url} alt='kasaragod sahithyotsav sessions' width={0}
+                <Image src={image.url} alt='mountnoor' width={0}
                   height={0}
                   sizes="100vw"
                   loading='lazy'

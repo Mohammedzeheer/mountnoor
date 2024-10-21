@@ -32,7 +32,7 @@ export const sessionImages =[
         role: 'Mountune Fest',
     },
     {
-        url: 'https://res.cloudinary.com/dah6aafle/image/upload/v1729192606/mountnoor/Mountune2024/hamza_misbaayi_ambdjq.jpg.jpg',
+        url: 'https://res.cloudinary.com/dah6aafle/image/upload/v1729192606/mountnoor/Mountune2024/hamza_misbaayi_ambdjq.jpg',
         session: 'Thajul Ulama, Noorul Ulama Commemoration',
         date : '2024 Oct 20',
         role: 'Speech',
