@@ -1,5 +1,5 @@
 'use client'
-import React, { useEffect, useState,useRef} from "react";
+import React, { useEffect, useState, useRef } from "react";
 import axios from "axios";
 import Image from "next/image";
 import { categories, itemsByCategory } from '../data/moutune.js'
@@ -92,57 +92,72 @@ function Result() {
         // drawText(displayedResult[0].category, 130, 150 + lines * 70, 500, 45);
 
 
-        context.font = "600 50px Poppins, sans-serif";
+        context.font = "600 40px Poppins, sans-serif";
         context.fillStyle = "#111254";
         const lines = drawText(displayedResult[0].item, 350, 700, 500, 70);
 
         context.font = "400 35px Poppins, sans-serif";
         context.fillStyle = "black";
-        drawText(displayedResult[0].category, 350, 750, 500, 45);
+        drawText(displayedResult[0].category, 350, 740, 500, 45);
 
+        context.beginPath();
+        context.arc(550, 800, 30, 0, 2 * Math.PI);
+        context.fillStyle = "#e0e0e0";
+        context.fill();
 
         context.font = "400 35px Poppins, sans-serif";
         context.fillStyle = "#154c79";
-        context.fillText("1", 550, 860);
+        context.fillText("1", 550, 810);
 
         context.font = "600 30px Poppins, sans-serif";
         context.fillStyle = "#220a82";
         const text = displayedResult[0].firstName.toUpperCase();
-        context.fillText(text, 600, 850);
+        context.fillText(text, 600, 800);
 
         context.font = "400 20px Poppins, sans-serif";
         context.fillStyle = "#154c79";
-        context.fillText(displayedResult[0].firstTeam, 600, 880);
+        context.fillText(displayedResult[0].firstTeam, 600, 820);
+
+
+        context.beginPath();
+        context.arc(550, 880, 30, 0, 2 * Math.PI);
+        context.fillStyle = "#e0e0e0";
+        context.fill();
 
         context.font = "400 35px Poppins, sans-serif";
         context.fillStyle = "#154c79";
-        context.fillText("2", 550, 960);
+        context.fillText("2", 550, 890);
 
         context.font = "600 30px Poppins, sans-serif";
         context.fillStyle = "#220a82";
         const text2 = displayedResult[0].secondName.toUpperCase();
-        context.fillText(text2, 600, 950);
+        context.fillText(text2, 600, 880);
 
         context.font = "400 20px Poppins, sans-serif";
         context.fillStyle = "#154c79";
-        context.fillText(displayedResult[0].secondTeam, 600, 980);
+        context.fillText(displayedResult[0].secondTeam, 600, 900);
+
+        context.beginPath();
+        context.arc(550, 960, 30, 0, 2 * Math.PI);
+        context.fillStyle = "#e0e0e0";
+        context.fill();
 
         context.font = "400 35px Poppins, sans-serif";
         context.fillStyle = "#154c79";
-        context.fillText("3", 550, 1060);
+        context.fillText("3", 550, 970);
 
         context.font = "600 30px Poppins, sans-serif ";
         context.fillStyle = "#220a82";
         const text3 = displayedResult[0].thirdName.toUpperCase();
-        context.fillText(text3, 600, 1050);
+        context.fillText(text3, 600, 960);
 
         context.font = "400 20px Poppins, sans-serif";
         context.fillStyle = "#154c79";
-        context.fillText(displayedResult[0].firstTeam, 600, 1080);
+        context.fillText(displayedResult[0].firstTeam, 600, 980);
       }
     }
   }, [displayedResult, canvas, image, imageLoaded]);
-  
+
   const handleDownload = () => {
     if (canvasRef.current) {
       const canvas = canvasRef.current;
@@ -183,35 +198,35 @@ function Result() {
         </div>
       </div>
       {item && (
-      <div className="mt-0 md:mt-8 ">
-        {displayedResult.length == 1 && <div className="flex flex-col w-full pt-4">
-          <div className="flex flex-col md:flex-row p-8 gap-4">
-            <div className="flex items-center gap-5">
-              <h1 className="text-xl font-semibold ">1</h1>
-              <div className="-space-y-2">
-                <h1 className="text-2xl font-bold">{capitalizeFirstLetter(displayedResult[0].firstName)}</h1>
-                <h1>{displayedResult[0].firstTeam}</h1>
+        <div className="mt-0 md:mt-8 ">
+          {displayedResult.length == 1 && <div className="flex flex-col w-full pt-4">
+            <div className="flex flex-col md:flex-row p-8 gap-4">
+              <div className="flex items-center gap-5">
+                <h1 className="text-xl font-semibold ">1</h1>
+                <div className="-space-y-2">
+                  <h1 className="text-2xl font-bold">{capitalizeFirstLetter(displayedResult[0].firstName)}</h1>
+                  <h1>{displayedResult[0].firstTeam}</h1>
+                </div>
+              </div>
+              <div className="flex items-center gap-5">
+                <h1 className="text-xl font-semibold">2</h1>
+                <div className="-space-y-2">
+                  <h1 className="text-2xl font-bold">{capitalizeFirstLetter(displayedResult[0].secondName)}</h1>
+                  <h1>{displayedResult[0].secondTeam}</h1>
+                </div>
+              </div>
+              <div className="flex items-center gap-5">
+                <h1 className="text-xl font-semibold">3</h1>
+                <div className="-space-y-2">
+                  <h1 className="text-2xl font-bold">{capitalizeFirstLetter(displayedResult[0].thirdName)}</h1>
+                  <h1>{displayedResult[0].thirdTeam}</h1>
+                </div>
               </div>
             </div>
-            <div className="flex items-center gap-5">
-              <h1 className="text-xl font-semibold">2</h1>
-              <div className="-space-y-2">
-                <h1 className="text-2xl font-bold">{capitalizeFirstLetter(displayedResult[0].secondName)}</h1>
-                <h1>{displayedResult[0].secondTeam}</h1>
-              </div>
-            </div>
-            <div className="flex items-center gap-5">
-              <h1 className="text-xl font-semibold">3</h1>
-              <div className="-space-y-2">
-                <h1 className="text-2xl font-bold">{capitalizeFirstLetter(displayedResult[0].thirdName)}</h1>
-                <h1>{displayedResult[0].thirdTeam}</h1>
-              </div>
-            </div>
-          </div>
-        </div>}
+          </div>}
 
-        {/* Hidden image for canvas drawing */}
-        <Image
+          {/* Hidden image for canvas drawing */}
+          <Image
             objectFit='contain'
             priority
             fill
@@ -235,9 +250,9 @@ function Result() {
             Download
           </button>
 
-        {item === '' && <h1 className='pt-4'>Please Select Your Item</h1>}
-        {notUploaded && item ? <h1 className='pt-4'>Sorry.. This result isn&apos;t uploaded yet.</h1> : null}
-      </div>
+          {item === '' && <h1 className='pt-4'>Please Select Your Item</h1>}
+          {notUploaded && item ? <h1 className='pt-4'>Sorry.. This result isn&apos;t uploaded yet.</h1> : null}
+        </div>
       )}
     </div>
   )
