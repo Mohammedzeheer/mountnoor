@@ -1,4 +1,3 @@
-// app/api/admission/route.js
 import { NextResponse } from 'next/server';
 import connectMongo from "../../../libs/mongoDB";
 import AdmissionModel from "../../../models/Admission";
