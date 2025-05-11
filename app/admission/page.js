@@ -199,18 +199,6 @@ const AdmissionForm = () => {
                       />
                       <label htmlFor="female" className="text-gray-700">Female</label>
                     </div>
-                    <div className="flex items-center">
-                      <input
-                        type="radio"
-                        id="other"
-                        name="gender"
-                        value="other"
-                        checked={formData.gender === 'other'}
-                        onChange={handleChange}
-                        className="h-4 w-4 text-green-500 focus:ring-green-500 mr-2"
-                      />
-                      <label htmlFor="other" className="text-gray-700">Other</label>
-                    </div>
                   </div>
                 </div>
                 
