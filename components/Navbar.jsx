@@ -46,6 +46,7 @@ function Navbar() {
     { href: "/", label: "Home" },
     { href: "/about", label: "About" },
     { href: "/gallery", label: "Gallery" },
+    { href: "/caliber", label: "Caliber" },
     { href: "/mountune", label: "Mountune" },
   ];
 

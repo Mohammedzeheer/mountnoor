@@ -1,59 +1,133 @@
-import Navbar from '@/components/Navbar'
-import React from 'react'
-import Image from 'next/image'
-import { FaWhatsapp } from "react-icons/fa6";
-import { watsappGroupUrls } from '@/constants/whatsappUrl'
-import { sessionImages } from "@/constants/whatsappUrl";
+// Add the "use client" directive to mark this as a client component
+'use client';
 
-export const metadata = {
-  title: 'news',
-}
+import React, { useEffect, useState } from 'react';
+import Navbar from '@/components/Navbar';
+import Image from 'next/image';
 
-const page = () => {
-  const images = sessionImages
+// export const metadata = {
+//   title: 'news',
+// };
+
+const NewsPage = () => {
+  const [images, setImages] = useState([]);
+
+  useEffect(() => {
+    const fetchImages = async () => {
+      try {
+        const res = await fetch('/api/uploadImage');
+        const data = await res.json();
+        console.log('Fetched images:', data);
+        if (data.success) {
+          const filteredImages = data.data.filter(image => image.category !== 'Gallery');
+        setImages(filteredImages);
+          // setImages(data.data);
+        }
+      } catch (error) {
+        console.error('Failed to load images:', error);
+      }
+    };
+
+    fetchImages();
+  }, []);
+
   return (
-    <div className='pb-6'>
+    <div className="pb-6">
       <Navbar />
-      <div className='pt-[32%] lg:pt-[16vh] md:pt-[18vh] p-6 px-12 md:px-24 lg:px-24 w-full font-rubik'>
-        <h1 className='text-3xl font-bold py-6 text-primary font-rubik uppercase'>News</h1>
-        <div className='grid lg:grid-cols-5 md:grid-cols-3 grid-cols-1 gap-[1.5rem] md:gap-[1.2rem] lg:gap-[1.6rem] '>
-          {/* cards */}
-          {images.length > 0 && images.slice(0, 15).map((image, i) => {
-            return (
-              <div key={i} className='flex flex-col flex-grow bg-yellow-50  rounded-xl shadow hover:shadow-lg hover:scale-105 duration-150 hover:cursor-pointer w-full'>
-                <Image src={image.url} alt='mountnoor' width={0}
-                  height={0}
-                  sizes="100vw"
-                  loading='lazy'
-                  className='w-full h-auto' />
-                <div className='-space-y-0.5 p-4'>
-                  <div className="flex gap-2 pt-1 items-center justify-between">
-                    <div className='flex items-center gap-1'>
-                      <div className="bg-orange-400 rounded-full w-2 h-2 "></div>
-                      <h1 className='font-medium text-sm leading-4'> {image.session} </h1>
-                    </div>
-                    <div>
-                      {/* <h1 className='text-sm font-semibold leading-4 text-end'> {image.date} </h1> */}
-                    </div>
+      <div className="pt-[32%] lg:pt-[16vh] md:pt-[18vh] p-6 px-12 md:px-24 lg:px-24 w-full font-rubik">
+        <h1 className="text-3xl font-bold py-6 text-primary uppercase">News</h1>
+        <div className="grid lg:grid-cols-5 md:grid-cols-3 grid-cols-1 gap-[1.5rem] md:gap-[1.2rem] lg:gap-[1.6rem]">
+          {images?.slice(0, 15).map((image, i) => (
+            <div
+              key={i}
+              className="flex flex-col bg-yellow-50 rounded-xl shadow hover:shadow-lg hover:scale-105 duration-150 hover:cursor-pointer w-full"
+            >
+              <Image
+                src={image.imageUrl}
+                alt="mountnoor"
+                width={500}
+                height={300}
+                loading="lazy"
+                className="w-full h-auto object-cover"
+              />
+              <div className="-space-y-0.5 p-4">
+                <div className="flex gap-2 pt-1 items-center justify-between">
+                  <div className="flex items-center gap-1">
+                    <div className="bg-orange-400 rounded-full w-2 h-2" />
+                    <h1 className="font-medium text-sm leading-4">{image.category}</h1>
                   </div>
-                  {/* <h1 className=' font-semibold text-lg'>{image.role}</h1> */}
+                  {/* Optional date or other fields */}
                 </div>
               </div>
-            )
-          }
-          )}
+            </div>
+          ))}
         </div>
-        {/* btn */}
-        {/* <div className='w-full pt-8'>
-          <a
-            href={watsappGroupUrls}
-            className='bg-gradient-to-r to-orange-700 from-yellow-500 shadow-xl rounded-xl text-white w-full p-4 px-6 text-lg font-semibold flex items-center justify-center gap-2'>
-            <FaWhatsapp size={25} />
-            Explore the Event</a>
-        </div> */}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default NewsPage;
+
+
+
+
+// import Navbar from '@/components/Navbar'
+// import React from 'react'
+// import Image from 'next/image'
+// import { FaWhatsapp } from "react-icons/fa6";
+// import { watsappGroupUrls } from '@/constants/whatsappUrl'
+// import { sessionImages } from "@/constants/whatsappUrl";
+
+// export const metadata = {
+//   title: 'news',
+// }
+
+// const page = () => {
+//   const images = sessionImages
+//   return (
+//     <div className='pb-6'>
+//       <Navbar />
+//       <div className='pt-[32%] lg:pt-[16vh] md:pt-[18vh] p-6 px-12 md:px-24 lg:px-24 w-full font-rubik'>
+//         <h1 className='text-3xl font-bold py-6 text-primary font-rubik uppercase'>News</h1>
+//         <div className='grid lg:grid-cols-5 md:grid-cols-3 grid-cols-1 gap-[1.5rem] md:gap-[1.2rem] lg:gap-[1.6rem] '>
+//           {/* cards */}
+//           {images.length > 0 && images.slice(0, 15).map((image, i) => {
+//             return (
+//               <div key={i} className='flex flex-col flex-grow bg-yellow-50  rounded-xl shadow hover:shadow-lg hover:scale-105 duration-150 hover:cursor-pointer w-full'>
+//                 <Image src={image.url} alt='mountnoor' width={0}
+//                   height={0}
+//                   sizes="100vw"
+//                   loading='lazy'
+//                   className='w-full h-auto' />
+//                 <div className='-space-y-0.5 p-4'>
+//                   <div className="flex gap-2 pt-1 items-center justify-between">
+//                     <div className='flex items-center gap-1'>
+//                       <div className="bg-orange-400 rounded-full w-2 h-2 "></div>
+//                       <h1 className='font-medium text-sm leading-4'> {image.session} </h1>
+//                     </div>
+//                     <div>
+//                       {/* <h1 className='text-sm font-semibold leading-4 text-end'> {image.date} </h1> */}
+//                     </div>
+//                   </div>
+//                   {/* <h1 className=' font-semibold text-lg'>{image.role}</h1> */}
+//                 </div>
+//               </div>
+//             )
+//           }
+//           )}
+//         </div>
+//         {/* btn */}
+//         {/* <div className='w-full pt-8'>
+//           <a
+//             href={watsappGroupUrls}
+//             className='bg-gradient-to-r to-orange-700 from-yellow-500 shadow-xl rounded-xl text-white w-full p-4 px-6 text-lg font-semibold flex items-center justify-center gap-2'>
+//             <FaWhatsapp size={25} />
+//             Explore the Event</a>
+//         </div> */}
+//       </div>
+//     </div>
+//   )
+// }
+
+// export default page

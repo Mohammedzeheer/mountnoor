@@ -81,7 +81,7 @@ const Footer = () => {
 
       <div className="flex justify-center text-gray-400 text-xs">
         <div>Designed and Developed  </div>
-        <a href="https://mohammedzaheer.online" className="text-black-600 hover:underline pl-1 ">
+        <a href="https://mohammedzaheer.netlify.app/" className="text-black-600 hover:underline pl-1 ">
           Mohammed Zaheer
         </a>
       </div>
